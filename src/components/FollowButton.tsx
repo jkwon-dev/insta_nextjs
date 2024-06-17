@@ -24,13 +24,7 @@ export default function FollowButton({ user }: Props) {
   return (
     <>
       {showButton && (
-        <Button
-          text={text}
-          onClick={() => {
-            handleFollow;
-          }}
-          red={text === "Unfollow"}
-        />
+        <Button text={text} onClick={handleFollow} red={text === "Unfollow"} />
       )}
     </>
   );
